@@ -424,18 +424,6 @@ body {
   text-decoration: underline;
   opacity: 0.65;
 }
-.nav__logo {
-  font-family: "Raleway", sans-serif;
-  font-size: 6.4rem;
-  color: #fff;
-  font-weight: 700;
-  text-decoration: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate3d(-50%, 50%, 0);
-  z-index: 1;
-}
 .nav__delivery {
   display: flex;
 }
@@ -455,10 +443,11 @@ body {
   height: 100%;
   overflow: hidden;
   fill: #fff;
-  transition: fill 0.2s linear;
+  transition: fill 0.2s linear, transform 0.2s linear;
 }
 .nav__link-icon:hover {
   fill: rgba(255, 255, 255, 0.65);
+  transform: translateY(-5px);
 }
 
 .intro {
@@ -494,9 +483,33 @@ body {
 }
 .intro__subtitle {
   font-family: "Raleway", sans-serif;
-  font-style: 2.4rem;
+  font-size: 2.4rem;
   color: #fff;
   line-height: 1.2;
   position: relative;
   z-index: 2;
+}
+.intro__stiker {
+  padding: 3.65rem 4.3rem 0 5.1rem;
+  background-color: #000;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  margin-bottom: -123px;
+  text-align: left;
+}
+.intro__stiker-list {
+  font-size: 2.4rem;
+  color: #fff;
+}
+.intro__stiker-list li {
+  background-image: url("../images/svg/stiker.svg");
+  background-repeat: no-repeat;
+  background-position: top left;
+  padding-left: 2.7rem;
+  padding-bottom: 4rem;
+}
+.intro__stiker-list li:last-child {
+  padding-bottom: 3.65rem;
 }

@@ -40,11 +40,43 @@
 
     &__subtitle {
         font-family: 'Raleway', sans-serif;
-        font-style: 2.4rem;
+        font-size: 2.4rem;
         color: $white;
         line-height: 1.2;
 
         position: relative;
         z-index: 2;
+    }
+
+    &__stiker {
+        padding: 3.65rem 4.3rem 0 5.1rem;
+        background-color: $black;
+
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: 2;
+        margin-bottom: -123px;
+
+        text-align: left;
+
+        &-list {
+            font-size: 2.4rem;
+            color: $white;
+
+            
+            & li {
+                background-image: url('../images/svg/stiker.svg');
+                background-repeat: no-repeat;
+                background-position: top left;
+
+                padding-left: 2.7rem;
+                padding-bottom: 4rem;
+
+                &:last-child {
+                    padding-bottom: 3.65rem;
+                }
+            }
+        }
     }
 }
