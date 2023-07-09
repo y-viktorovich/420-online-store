@@ -1,0 +1,30 @@
+.section {
+    background-color: $black;
+
+    &__inner {
+        padding: 1rem 0;
+    }
+
+    &__title {
+        font-family: 'Raleway', sans-serif;
+        font-size: 4.8rem;
+        color: $white;
+        font-weight: 700;
+        text-transform: uppercase;
+
+        & span {
+            -webkit-text-fill-color: transparent;
+            -webkit-text-stroke: 1px $white;
+
+            transition: text-shadow .2s linear;
+
+            &:hover {
+                text-shadow: -3px 0px $white;
+            }
+        }
+    }
+}
+
+.new {
+    background-color: #fff;
+}
