@@ -1,0 +1,38 @@
+.quote {
+    padding: 8.8rem 0 9.3rem;
+
+
+    &__item {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__photo {
+        width: 31.25%;
+        min-height: 408px;
+        overflow: hidden;
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        display: block;
+
+        object-fit: cover;
+        object-position: top center;
+    }
+
+    &__text {
+        width: 68.75%;
+        padding-top: 8.9rem;
+        padding-left: 7.1rem;
+    }
+
+    &__icon {
+        display: block;
+        width: 85px;
+        height: 85px;
+
+        margin-bottom: 3.3rem;
+    }
+}
