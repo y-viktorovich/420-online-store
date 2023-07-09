@@ -5,11 +5,13 @@
         padding: 1rem 0;
     }
 
-    &__title {
+    &__title,
+    .info__list-item__title {
         font-family: 'Raleway', sans-serif;
         font-size: 4.8rem;
         color: $white;
         font-weight: 700;
+        line-height: 1.2;
         text-transform: uppercase;
 
         & span {
@@ -18,13 +20,25 @@
 
             transition: text-shadow .2s linear;
 
+            padding-left: 4.1rem;
+
             &:hover {
                 text-shadow: -3px 0px $white;
             }
         }
-    }
-}
 
-.new {
-    background-color: #fff;
+        &--white {
+            margin-bottom: 2.1rem;
+
+            & span {
+                -webkit-text-fill-color: transparent;
+                -webkit-text-stroke: 1px $black;
+                padding-left: 0;
+
+                &:hover {
+                    text-shadow: -3px 0px $black;
+                }
+            }
+        }
+    }
 }
