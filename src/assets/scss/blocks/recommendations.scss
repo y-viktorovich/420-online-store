@@ -1,4 +1,4 @@
-.new {
+.recommendations {
     padding: 6.2rem 0 7.3rem;
     background-color: $white;
 
@@ -23,7 +23,7 @@
         overflow: hidden;
 
         &:hover {
-            .new__content {
+            .recommendations__content {
                 opacity: 1;
                 position: static;
                 margin-bottom: 0;
@@ -82,5 +82,9 @@
         transform: translateY(-50px);
 
         transition: transform .4s ease-in-out, opacity .1s linear, margin-bottom .2s;
+    }
+
+    &--product {
+        padding: 6.2rem 0 0;
     }
 }

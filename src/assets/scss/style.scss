@@ -24,6 +24,7 @@ body {
 
 /* Blocks
 ============================= */
+@import "blocks/page";
 @import "blocks/btn";
 @import "blocks/container";
 @import "blocks/header";
@@ -31,12 +32,13 @@ body {
 @import "blocks/intro";
 @import "blocks/quote";
 @import "blocks/section";
-@import "blocks/new";
+@import "blocks/recommendations";
 @import "blocks/action";
 @import "blocks/info";
 @import "blocks/footer";
 @import "blocks/copyright";
-
+@import "blocks/product";
+@import "blocks/path";
 
 /* Helpers
 ============================= */

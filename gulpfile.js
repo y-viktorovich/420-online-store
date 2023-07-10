@@ -55,7 +55,8 @@ const path = {
 function serve() {
     browserSync.init({
         server: {
-            baseDir: "./" + distPath
+            baseDir: "./" + distPath,
+            index: "cart.html"
         }
     });
 }

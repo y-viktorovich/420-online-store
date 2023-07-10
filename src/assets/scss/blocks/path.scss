@@ -1,0 +1,37 @@
+.path {
+    padding: 22.6rem 0 3.5rem;
+
+    &__link {
+        font-family: 'Raleway', sans-serif;
+        font-size: 2.4rem;
+        color: $black;
+        line-height: 1.2;
+        text-decoration: none;
+        position: relative;
+
+        & + .path__link {
+            margin-left: 1rem;
+        }
+
+        &:not(.path__link:last-child):after {
+            content: "";
+            display: block;
+            width: 18px;
+            height: 1.5px;
+
+            position: absolute;
+            top: 50%;
+            right: -17px;
+            z-index: 1;
+
+            transform: rotateZ(-55deg) skew(35deg);
+            pointer-events: none;
+            
+            background-color: $black;
+        }
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
