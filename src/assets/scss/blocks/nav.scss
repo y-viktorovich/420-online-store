@@ -17,8 +17,6 @@
         }
     }
 
-    
-
     &__delivery {
         display: flex;
     }
@@ -50,5 +48,29 @@
             transform: translateY(-5px);
         }
     }
+
+    &__col {
+        margin-top: 1.5rem;
+    }
+
+    &__list-item__link {
+        font-family: 'Raleway', sans-serif;
+        font-size: 1.8rem;
+        color: $white;
+        font-weight: 500;
+        line-height: 1.5;
+        text-decoration: none;
+
+        transition: opacity .2s linear;
+
+        &:hover {
+            text-decoration: underline;
+            opacity: .65;
+            text-shadow: none;
+        }
+    }
+
 }
+
+
 

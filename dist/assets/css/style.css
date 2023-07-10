@@ -454,6 +454,21 @@ body {
     opacity: 0.65;
 }
 
+.header__logo--footer {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translate3d(-50%, 100%, 0);
+    transform: translate3d(-50%, 100%, 0);
+    transition: text-shadow 0.2s linear;
+}
+
+.header__logo--footer:hover {
+    opacity: 1;
+    text-shadow: -3px 0px #fff;
+}
+
 .nav__link {
     font-family: "Raleway", sans-serif;
     font-size: 2.4rem;
@@ -502,6 +517,25 @@ body {
     fill: rgba(255, 255, 255, 0.65);
     -webkit-transform: translateY(-5px);
     transform: translateY(-5px);
+}
+
+.nav__col {
+    margin-top: 1.5rem;
+}
+
+.nav__list {
+    font-family: "Raleway", sans-serif;
+    font-size: 1.8rem;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    transition: opacity 0.2s linear;
+}
+
+.nav__list:hover {
+    text-decoration: underline;
+    opacity: 0.65;
+    text-shadow: none;
 }
 
 .intro {
@@ -627,30 +661,48 @@ body {
     padding: 1rem 0;
 }
 
-.section__title {
+.section__title,
+.section .info__list-item__title {
     font-family: "Raleway", sans-serif;
     font-size: 4.8rem;
     color: #fff;
     font-weight: 700;
+    line-height: 1.2;
     text-transform: uppercase;
 }
 
-.section__title span {
+.section__title span,
+.section .info__list-item__title span {
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 1px #fff;
     transition: text-shadow 0.2s linear;
+    padding-left: 4.1rem;
 }
 
-.section__title span:hover {
+.section__title span:hover,
+.section .info__list-item__title span:hover {
     text-shadow: -3px 0px #fff;
 }
 
-.new {
-    background-color: #fff;
+.section__title--white,
+.section .info__list-item__title--white {
+    margin-bottom: 2.1rem;
+}
+
+.section__title--white span,
+.section .info__list-item__title--white span {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #000;
+    padding-left: 0;
+}
+
+.section__title--white span:hover,
+.section .info__list-item__title--white span:hover {
+    text-shadow: -3px 0px #000;
 }
 
 .new {
-    padding-top: 6.2rem;
+    padding: 6.2rem 0 7.3rem;
     background-color: #fff;
 }
 
@@ -734,6 +786,112 @@ body {
     transition: opacity 0.1s linear, margin-bottom 0.2s, -webkit-transform 0.4s ease-in-out;
     transition: transform 0.4s ease-in-out, opacity 0.1s linear, margin-bottom 0.2s;
     transition: transform 0.4s ease-in-out, opacity 0.1s linear, margin-bottom 0.2s, -webkit-transform 0.4s ease-in-out;
+}
+
+.action {
+    min-height: 724px;
+    background: #e8dbcc url(../images/action/action-bg.jpg) no-repeat;
+    background-size: cover;
+}
+
+.action__inner {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.action__content {
+    padding-top: 33.7rem;
+    margin-left: auto;
+    min-width: 375px;
+}
+
+.action-link {
+    margin-bottom: 3.3rem;
+}
+
+.action__incart {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.action__price {
+    padding-left: 6.2rem;
+}
+
+.action__price-old {
+    margin-bottom: 0.6rem;
+    position: relative;
+}
+
+.action__price-old:after {
+    content: "";
+    display: block;
+    width: 120%;
+    height: 1px;
+    background-color: #000;
+    -webkit-transform: rotate(-10deg) translate3d(-50%, 3px, 0);
+    transform: rotate(-10deg) translate3d(-50%, 3px, 0);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 1;
+}
+
+.info {
+    background-color: #fff;
+    padding-top: 4.5rem;
+    padding-bottom: 58.5rem;
+    background-image: linear-gradient(to top, black 2%, rgba(255, 255, 255, 0.1) 30%, rgba(255, 255, 255, 0)), url(../images/svg/city.svg);
+    background-repeat: no-repeat;
+    background-position: center bottom -15px;
+}
+
+.info__list-item {
+    margin-bottom: 4.55rem;
+    line-height: 1.5;
+}
+
+.info__list-item ol {
+    list-style: decimal;
+    padding-left: 3rem;
+    padding-right: 20rem;
+}
+
+.info__list-text {
+    font-size: 2.8rem;
+    color: #000;
+}
+
+.info__list-icon {
+    display: block;
+    width: 46px;
+    height: 46px;
+    fill: #000;
+    -ms-flex-order: 2;
+    order: 2;
+    transition: fill 0.2s linear;
+}
+
+.info__list-icon:hover {
+    fill: rgba(0, 0, 0, 0.7);
+}
+
+.info__list-item__link {
+    color: #000;
+    text-decoration: none;
+    transition: color 0.2s linear;
+}
+
+.info__list-item__link:hover {
+    text-decoration: underline;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.footer {
+    padding-top: 9.2rem;
+    background-color: #000;
 }
 
 /* Helpers
