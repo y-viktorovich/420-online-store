@@ -1,0 +1,110 @@
+.cart {
+    &__item {
+        padding-top: 3.2rem;
+
+        border-top: 1px solid $black;
+    }
+
+    &__item {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+    &__photo {
+        width: 22%;
+        width: 225px;
+        overflow: hidden;
+    }
+
+    &__photo-img {
+        width: 100%;
+        height: 100%;
+
+        object-fit: contain;
+        object-position: center;
+    }
+
+    &__text {
+        width: 78%;
+        padding-left: 4.6rem;
+    }
+}
+
+
+.dropdown {
+    position: relative;
+}
+
+
+.dropdown__button {
+        font-family: 'Raleway', sans-serif;
+        font-size: 2.4rem;
+        line-height: 1;
+        color: $black;
+        text-transform: uppercase;
+        text-decoration: underline;
+        text-align: center;
+
+        border: 1px solid transparent;
+        border-radius: .4rem;
+        background-color: transparent;
+        outline: 0;
+        cursor: pointer;
+
+        padding: .65em;
+
+        transition: background-color .2s linear, color .2s linear, border .2s linear;
+
+        &.active {
+            background-color: $black;
+            color: $white;
+            border-color: transparent;
+        }
+
+        // &:focus {
+        //     border: 1px solid $black;
+        // }
+}
+
+.dropdown__list {
+    position: absolute;
+    top: 105%;
+    left: 0;
+    z-index: 1;
+
+    font-family: 'Raleway', sans-serif;
+    color: $white;
+    font-size: 2.4rem;
+    text-align: center;
+
+    border: 1px solid $black;
+    border-radius: .2em;
+
+    background-color: $white;
+
+    visibility: hidden;
+
+    transition: visibility .2s linear;
+
+    &.show {
+        visibility: visible;
+    }
+
+
+    .dropdown__item {
+        padding: .15em;
+
+        color: $black;
+
+        transition: background-color .2s linear;
+
+        &:hover {
+            background-color: $black;
+            cursor: pointer;
+            color: $white;
+        }
+    }
+
+
+}
