@@ -1,0 +1,12 @@
+.copyright {
+    padding: 5.2rem 0 6.4rem;
+
+    &__text {
+        font-family: 'Raleway', sans-serif;
+        font-size: 1.8rem;
+        color: $white;
+        line-height: 1.2;
+        text-align: center;
+        opacity: .5;
+    }
+}
