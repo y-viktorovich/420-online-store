@@ -21,6 +21,14 @@
         color: $white;
     }
 
+    &:focus {
+        background-color: rgba($black, .7);
+    }
+
+    &:active {
+        background-color: rgba($black, .7);
+    }
+
     &--black {
         background-color: $black;
         color: $white;

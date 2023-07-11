@@ -420,6 +420,14 @@ body {
     color: #fff;
 }
 
+.btn:focus {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.btn:active {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
 .btn--black {
     background-color: #000;
     color: #fff;

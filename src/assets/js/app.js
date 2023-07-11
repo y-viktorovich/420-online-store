@@ -1,3 +1,32 @@
+//  Блок галереї
+
+let mainPhoto = document.querySelectorAll('.product__gallery-header__photo'),
+    tabPhoto = document.querySelectorAll('.product__gallery-footer__photo');
+
+function hideTab() {
+    mainPhoto.forEach(item => {
+        item.classList.remove('fade');
+        item.classList.remove('show');
+        item.classList.add('hide');
+    });
+}
+
+function showTab(i) {
+    mainPhoto[i].classList.remove('hide');
+    mainPhoto[i].classList.add('show');
+    mainPhoto[i].classList.add('fade');
+}
+
+tabPhoto.forEach((item, i) => {
+    item.addEventListener('click', event => {
+        event.preventDefault();
+        hideTab();
+        showTab(i);
+    });
+});
+
+
+
 // Стилізація select.
 
 let dropdownNav = document.querySelectorAll('.dropdown'),
@@ -68,5 +97,7 @@ closeBtn.forEach((item, i) => {
         }
     });
 });
+
+
 
 
