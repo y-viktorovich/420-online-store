@@ -408,16 +408,26 @@ body {
     font-weight: 400;
     line-height: 1.1;
     text-align: center;
-    text-transform: uppercase;
+    text-decoration: none;
     cursor: pointer;
     border: 1px solid #000;
     background-color: transparent;
-    transition: background-color, color 0.2s linear;
+    transition: background-color 0.2s linear, color 0.2s linear;
 }
 
 .btn:hover {
     background-color: #000;
     color: #fff;
+}
+
+.btn--black {
+    background-color: #000;
+    color: #fff;
+}
+
+.btn--black:hover {
+    background-color: transparent;
+    color: #000;
 }
 
 .container {
@@ -822,16 +832,17 @@ body {
     justify-content: space-between;
 }
 
-.action__price {
+.price {
     padding-left: 6.2rem;
 }
 
-.action__price-old {
+.price-old {
     margin-bottom: 0.6rem;
+    display: inline-block;
     position: relative;
 }
 
-.action__price-old:after {
+.price-old:after {
     content: "";
     display: block;
     width: 120%;
@@ -843,6 +854,13 @@ body {
     top: 0;
     left: 50%;
     z-index: 1;
+}
+
+.price-text {
+    font-family: inherit;
+    font-size: 2.4rem;
+    color: #000;
+    opacity: 0.5;
 }
 
 .info {
@@ -1139,15 +1157,17 @@ body {
 }
 
 .cart__item {
-    padding-top: 3.2rem;
-    border-top: 1px solid #000;
-}
-
-.cart__item {
+    padding: 3.2rem 0 3.5rem;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    position: relative;
+    border-top: 1px solid #000;
+}
+
+.cart__item:last-child {
+    border-bottom: 1px solid #000;
 }
 
 .cart__photo {
@@ -1168,24 +1188,49 @@ body {
 .cart__text {
     width: 78%;
     padding-left: 4.6rem;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 3rem;
 }
 
-.cart__size {
+.cart__title {
     font-family: "Raleway", sans-serif;
     font-size: 2.4rem;
-    line-height: 1.2;
     color: #000;
-    text-transform: uppercase;
-    text-decoration: underline;
-    -webkit-appearance: none;
-    appearance: none;
-    border: none;
-    background-color: transparent;
-    outline: 0;
+    line-height: 1.2;
+    margin-bottom: 2.3rem;
+    padding-top: 1.5rem;
+    margin-right: 1rem;
+    max-width: 450px;
 }
 
-.cart__size::-ms-expand {
-    display: none;
+.cart__close {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    font-style: 0;
+    color: transparent;
+    background: none;
+    border: 0;
+    cursor: pointer;
+    position: absolute;
+    top: 16px;
+    right: 0;
+    z-index: 1;
+    transition: -webkit-transform 0.2s linear;
+    transition: transform 0.2s linear;
+    transition: transform 0.2s linear, -webkit-transform 0.2s linear;
+}
+
+.cart__close:hover {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+}
+
+.cart__close-icon {
+    width: 100%;
+    height: 100%;
+    display: block;
 }
 
 .dropdown {
@@ -1200,13 +1245,14 @@ body {
     text-transform: uppercase;
     text-decoration: underline;
     text-align: center;
+    cursor: pointer;
+    width: 70px;
     border: 1px solid transparent;
-    border-radius: 0.4rem;
+    border-top-left-radius: 0.4rem;
+    border-top-right-radius: 0.4rem;
     background-color: transparent;
     outline: 0;
-    cursor: pointer;
     padding: 0.65em;
-    transition: background-color 0.2s linear, color 0.2s linear, border 0.2s linear;
 }
 
 .dropdown__button.active {
@@ -1217,34 +1263,97 @@ body {
 
 .dropdown__list {
     position: absolute;
-    top: 105%;
+    top: 100%;
     left: 0;
     z-index: 1;
     font-family: "Raleway", sans-serif;
     color: #fff;
     font-size: 2.4rem;
     text-align: center;
+    width: 100%;
     border: 1px solid #000;
-    border-radius: 0.2em;
+    border-bottom-left-radius: 0.2rem;
+    border-bottom-right-radius: 0.2rem;
     background-color: #fff;
     visibility: hidden;
-    transition: visibility 0.2s linear;
 }
 
 .dropdown__list.show {
     visibility: visible;
 }
 
-.dropdown__list .dropdown__item {
-    padding: 0.15em;
+.dropdown__item {
+    padding: 0.2em;
     color: #000;
     transition: background-color 0.2s linear;
 }
 
-.dropdown__list .dropdown__item:hover {
+.dropdown__item:hover {
     background-color: #000;
     cursor: pointer;
     color: #fff;
+}
+
+.request {
+    padding: 5.3rem 0 14.9rem;
+}
+
+.form__group {
+    max-width: 400px;
+    margin-bottom: 2.2rem;
+}
+
+.form__label {
+    font-family: "Raleway", sans-serif;
+    font-size: 2.4rem;
+    color: #000;
+    line-height: 1.2;
+    display: inline-block;
+    margin-bottom: 2.2rem;
+}
+
+.form__input {
+    font-family: "Raleway", sans-serif;
+    font-size: 2rem;
+    color: #000;
+    font-weight: 400;
+    padding: 1.15rem 2rem;
+    border-radius: 0;
+    border: 1px solid #000;
+    background-color: transparent;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    display: block;
+    transition: background-color 0.2s linear, border-width 0.2s linear;
+}
+
+.form__input:focus {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-width: 1.5px;
+}
+
+.form__footer {
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 4.4rem;
+}
+
+.form__footer-price {
+    padding-left: 3.3rem;
+}
+
+.massage {
+    padding: 8.8rem 0 10.2rem;
+    display: none;
+}
+
+.massage__text {
+    font-family: "Raleway", sans-serif;
+    font-size: 4.8rem;
+    color: #000;
+    line-height: 1.2;
+    margin-bottom: 2.9rem;
 }
 
 /* Helpers

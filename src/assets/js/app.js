@@ -1,40 +1,72 @@
-////// Стилізація select.
-let dropdownNav = document.querySelectorAll('.dropdown');
-let choiceResult = 0; // Записуємо обране значення з форми select.
+// Стилізація select.
 
-dropdownNav.forEach( item => {
-    
-    let dropdownButton = item.querySelector('.dropdown__button');
-    let dropdownList = item.querySelector('.dropdown__list');
-    let dropdownItem = dropdownList.querySelectorAll('.dropdown__item');
+let dropdownNav = document.querySelectorAll('.dropdown'),
+    choiceResult = 0, // Записуємо обране значення з форми select.
+    dropdownButton = document.querySelectorAll('.dropdown__button'),
+    dropdownList = document.querySelectorAll('.dropdown__list'),
+    dropdownItem = document.querySelectorAll('.dropdown__item');
 
-    function closeDropdown() {
-        dropdownButton.classList.remove('active');
-        dropdownList.classList.remove('show');
-    }
 
-    dropdownButton.addEventListener('click', (event) => {
-        dropdownButton.classList.toggle('active');
-        dropdownList.classList.toggle('show');
+function hideDropDown(i) {
+    dropdownButton[i].classList.remove('active');
+    dropdownList[i].classList.remove('show');
+}
+
+function toggleDropDown(i) {
+    dropdownButton[i].classList.toggle('active');
+    dropdownList[i].classList.toggle('show');
+}
+
+dropdownList.forEach((item, i) => {
+    item.addEventListener('click', event => {
+        choiceResult = event.target.dataset.value;
+        dropdownButton[i].textContent = choiceResult;
+        hideDropDown(i);
     });
+});
 
-    dropdownItem.forEach(item => {
-        item.addEventListener('click', event => {
-            choiceResult = event.target.dataset.value;
-            closeDropdown();
-        });
+dropdownButton.forEach((item, i) => {
+    item.addEventListener('click', event => {
+        toggleDropDown(i);
     });
+});
 
-    document.addEventListener('keydown', (event) => {
-        if (event.key === 'Tab' || event.key === 'Escape') {
-            closeDropdown();
-        }
-    });
-
-    document.addEventListener('click', (event) => {
-        if (event.target !== dropdownButton) {
-            choiceResult = event.target.dataset.value;
-            closeDropdown();
+document.addEventListener('click', (event) => {
+    dropdownButton.forEach((item, i) => {
+        if (event.target !== item) {
+            hideDropDown(i);
         }
     });
 });
+
+document.addEventListener('keydown', (event) => {
+    if (event.key === 'Tab' || event.key === 'Escape') {
+        dropdownNav.forEach((item, i) => {
+            hideDropDown(i);
+        });
+    }
+});
+
+
+// Закриття карти з товаром
+
+let cart = document.getElementsByClassName('cart__item'),
+    test = document.querySelectorAll('[data-cart]'),
+    closeBtn = document.querySelectorAll('[data-close]'),
+    massage = document.querySelector('.massage'),
+    request = document.querySelector('.request');
+
+    
+closeBtn.forEach((item, i) => {
+    item.addEventListener('click', event => {
+        test[i].remove();
+        console.log(cart);
+
+        if (0 == cart.length) {
+            massage.style.display = 'block';
+            request.style.display = 'none';
+        }
+    });
+});
+
+

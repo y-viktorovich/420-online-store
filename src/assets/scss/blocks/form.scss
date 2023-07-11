@@ -1,0 +1,50 @@
+.form {
+
+    &__group {
+        max-width: 400px;
+        margin-bottom: 2.2rem;
+    }
+
+    &__label {
+        font-family: 'Raleway', sans-serif;
+        font-size: 2.4rem;
+        color: $black;
+        line-height: 1.2;
+
+        display: inline-block;
+        margin-bottom: 2.2rem;
+    }
+
+    &__input {
+        font-family: 'Raleway', sans-serif;
+        font-size: 2rem;
+        color: $black;
+        font-weight: 400;
+
+        padding: 1.15rem 2rem;
+        border-radius: 0;
+        border: 1px solid $black;
+        background-color: transparent;
+
+        appearance: none;
+
+        width: 100%;
+        display: block;
+
+        transition: background-color .2s linear, border-width .2s linear;
+
+        &:focus {
+            background-color: rgba($black, .1);
+            border-width: 1.5px;
+        }
+    }
+
+    &__footer {
+        display: flex;
+        margin-top: 4.4rem;
+
+        &-price {
+            padding-left: 3.3rem;
+        }
+    }
+}

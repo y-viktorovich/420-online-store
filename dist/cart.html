@@ -69,37 +69,140 @@
         <div class="cart">
             <div class="container">
                 <div class="cart__inner">
-                    <div class="cart__item">
+                    <div class="cart__item" data-cart>
                         <div class="cart__photo">
                             <picture class="img">
-                                <source class="cart__photo-img" srcset="../assets/images/new/new-4.webp" type="image/webp">
-                                <img class="cart__photo-img" src="../assets/images/quote/new-4.jpg" alt="Clothes">
+                                <source class="cart__photo-img" srcset="../assets/images/all-product/clothe-1.webp" type="image/webp">
+                                <img class="cart__photo-img" src="../assets/images/all-product/clothe-1.jpg" alt="Clothes">
                             </picture>
                         </div>
         
                         <div class="cart__text">
-                            <div class="cart__title">худи St. Helens</div>
+                            <div class="cart__description">
+                                <h3 class="cart__title">худи St. Helens худи St. Helens</h3>
         
-                            <div class="dropdown">
-                                <button class="dropdown__button">M</button>
-                                <ul class="dropdown__list">
-                                    <li class="dropdown__item" data-value="XS">XS</li>
-                                    <li class="dropdown__item" data-value="S">S</li>
-                                    <li class="dropdown__item" data-value="M">M</li>
-                                    <li class="dropdown__item" data-value="L">L</li>
-                                    <li class="dropdown__item" data-value="XL">XL</li>
-                                    <li class="dropdown__item" data-value="XXL">XXL</li>
-                                </ul>
+                                <div class="price-new">23,40 руб</div>
                             </div>
+        
+                            <div>
+                                <div class="dropdown">
+                                    <button class="dropdown__button">M</button>
+                                    <ul class="dropdown__list">
+                                        <li class="dropdown__item" data-value="XS">XS</li>
+                                        <li class="dropdown__item" data-value="S">S</li>
+                                        <li class="dropdown__item" data-value="M">M</li>
+                                        <li class="dropdown__item" data-value="L">L</li>
+                                        <li class="dropdown__item" data-value="XL">XL</li>
+                                        <li class="dropdown__item" data-value="XXL">XXL</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div><!-- /.cart__text -->
+        
+                        <button class="cart__close" data-close type="button">
+                            <svg class="cart__close-icon">
+                                <use href="../assets/images/svg/sprites.svg#close"></use>
+                            </svg>
+                        </button>
+                    </div><!-- /.cart__item -->
+        
+                    <div class="cart__item" data-cart>
+                        <div class="cart__photo">
+                            <picture class="img">
+                                <source class="cart__photo-img" srcset="../assets/images/all-product/clothe-2.webp" type="image/webp">
+                                <img class="cart__photo-img" src="../assets/images/all-product/clothe-2.jpg" alt="Clothes">
+                            </picture>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        
+                        <div class="cart__text">
+                            <div class="cart__description">
+                                <h3 class="cart__title">худи St. Helens худи St. Helens</h3>
+        
+                                <div class="price-old">294,40 руб</div>
+                                <div class="price-new">23,40 руб</div>
+                            </div>
+        
+                            <div>
+                                <div class="dropdown">
+                                    <button class="dropdown__button">M</button>
+                                    <ul class="dropdown__list">
+                                        <li class="dropdown__item" data-value="XS">XS</li>
+                                        <li class="dropdown__item" data-value="S">S</li>
+                                        <li class="dropdown__item" data-value="M">M</li>
+                                        <li class="dropdown__item" data-value="L">L</li>
+                                        <li class="dropdown__item" data-value="XL">XL</li>
+                                        <li class="dropdown__item" data-value="XXL">XXL</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div><!-- /.cart__text -->
+        
+                        <button class="cart__close" data-close type="button">
+                            <svg class="cart__close-icon">
+                                <use href="../assets/images/svg/sprites.svg#close"></use>
+                            </svg>
+                        </button>
+                    </div><!-- /.cart__item -->
+                </div><!-- /.cart__inner -->
+            </div><!-- /.container -->
+        </div><!-- /.cart -->
         
         <!-- Info -->
         <div class="info">
+            
+        
+        
+            <!-- Request -->
+            <div class="request">
+                <div class="container">
+                    <form class="form" action="/" method="post">
+        
+                        <div class="form__group">
+                            <label class="form__label" for="">Ф.И.О</label>
+                            <input class="form__input" type="text">
+                        </div>
+        
+                        <div class="form__group">
+                            <label class="form__label" for="">Мобильный телефон</label>
+                            <input class="form__input" type="text">
+                        </div>
+        
+                        <div class="form__group">
+                            <label class="form__label" for="">Страна</label>
+                            <input class="form__input" type="text">
+                        </div>
+        
+                        <div class="form__group">
+                            <label class="form__label" for="">Город</label>
+                            <input class="form__input" type="text">
+                        </div>
+        
+                        <div class="form__group">
+                            <label class="form__label" for="">Почтовый индекс</label>
+                            <input class="form__input" type="text">
+                        </div>
+        
+                        <div class="form__footer">
+                            <button class="btn btn--black" type="submit">заказать</button>
+        
+                            <div class="form__footer-price">
+                                <div class="price-text">итого</div>
+                                <div class="price-new">118,40 руб</div>
+                            </div>
+                        </div>
+                    </form>
+                </div><!-- /.container -->
+            </div><!-- /.request -->
+        
+            
+        
             <div class="container">
+        
+                <div class="massage">
+                    <div class="massage__text">Здесь пусто!</div>
+                    <a class="btn btn--black" href="index.html">вернуться на главную страницу</a>
+                </div>
+        
                 <ul class="info__list">
                     <li class="info__list-item">
                             <svg class="info__list-icon">
@@ -121,6 +224,7 @@
                 </ul><!-- /.info__list -->
             </div><!-- /.container -->
         </div><!-- /.info -->
+        
         <!-- Footer -->
         <footer class="footer">
             <div class="container">

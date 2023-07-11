@@ -21,27 +21,4 @@
         display: flex;
         justify-content: space-between;
     }
-
-    &__price {
-        padding-left: 6.2rem;
-    }
-
-    &__price-old {
-        margin-bottom: .6rem;
-        position: relative;
-
-        &:after {
-            content: "";
-            display: block;
-            width: 120%;
-            height: 1px;
-            background-color: $black;
-            transform: rotate(-10deg) translate3d(-50%, 3px, 0);
-
-            position: absolute;
-            top: 0;
-            left: 50%;
-            z-index: 1;
-        }
-    }
 }
