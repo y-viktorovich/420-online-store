@@ -3,6 +3,24 @@
     &__group {
         max-width: 400px;
         margin-bottom: 2.2rem;
+
+        &.success input {
+            border-color: #436f64;
+            border-width: 2px;
+        }
+
+        &.error input {
+            border-color: #df1111;
+            border-width: 2px;
+        }
+
+        & .form__error {
+            color: #7c5151;
+            font-size: 1.5rem;
+            height: 13px;
+        }
+
+
     }
 
     &__label {

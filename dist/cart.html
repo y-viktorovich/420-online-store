@@ -155,31 +155,36 @@
             <!-- Request -->
             <div class="request">
                 <div class="container">
-                    <form class="form" action="/" method="post">
+                    <form id="form" class="form" action="/" method="post">
         
                         <div class="form__group">
-                            <label class="form__label" for="name">Ф.И.О</label>
-                            <input id="name" class="form__input" type="text">
+                            <label class="form__label" for="username">Ф.И.О</label>
+                            <input class="form__input" id="username" name="username" type="text">
+                            <div class="form__error"></div>
                         </div>
         
                         <div class="form__group">
-                            <label class="form__label" for="number">Мобильный телефон</label>
-                            <input id="number" class="form__input" type="text">
+                            <label class="form__label" for="phone">Мобильный телефон</label>
+                            <input class="form__input" id="phone" name="phone" type="tel">
+                            <div class="form__error"></div>
                         </div>
         
                         <div class="form__group">
                             <label class="form__label" for="country">Страна</label>
-                            <input id="country" class="form__input" type="text">
+                            <input class="form__input" id="country" name="country" type="text">
+                            <div class="form__error"></div>
                         </div>
         
                         <div class="form__group">
                             <label class="form__label" for="city">Город</label>
-                            <input id="city" class="form__input" type="text">
+                            <input class="form__input" id="city" name="city" type="text">
+                            <div class="form__error"></div>
                         </div>
         
                         <div class="form__group">
                             <label class="form__label" for="post-index">Почтовый индекс</label>
-                            <input id="post-index" class="form__input" type="text">
+                            <input class="form__input" id="post-index" name="post-idex" type="text" >
+                            <div class="form__error"></div>
                         </div>
         
                         <div class="form__footer">
@@ -197,7 +202,6 @@
             
         
             <div class="container">
-        
                 <div class="massage">
                     <div class="massage__text">Здесь пусто!</div>
                     <a class="btn btn--black" href="index.html">вернуться на главную страницу</a>
