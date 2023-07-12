@@ -1,0 +1,28 @@
+.wrapper {
+
+    display: flex;
+    justify-content: space-between;
+
+    position: relative;
+    @media (max-width: 991px) {
+        width: 100%;
+        min-height: 100vh;
+        padding-right: 2.5rem;
+
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        z-index: 1;
+
+        transition: transform .3s ease-in-out;
+        transform: translateX(100%);
+
+        background-color: rgba($black, 0.7);
+        background-size: cover;
+    }
+}

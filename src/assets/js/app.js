@@ -1,3 +1,22 @@
+//  Плавний скролл
+
+let deliverySection = document.querySelector('#delivery');
+    deliveryBtn = document.querySelector('[data-scroll]');
+
+    function handleButtonClick() {
+        deliverySection.scrollIntoView({
+            block: 'start', behavior: 'smooth'
+        });
+    }
+
+    if (deliveryBtn) {
+        deliveryBtn.addEventListener('click', (event) => {
+            event.preventDefault();
+            handleButtonClick();
+            console.log(deliverySection, deliveryBtn);
+        });
+    }
+
 //  Блок галереї
 
 let mainPhoto = document.querySelectorAll('.product__gallery-header__photo'),
@@ -118,6 +137,7 @@ const setError = (element, massage) => {
     inputControl.classList.remove('success');
 };
 
+
 const setSuccess = element => {
     const inputControl = element.parentElement;
     const errorDisplay = inputControl.querySelector('.form__error');
@@ -127,12 +147,6 @@ const setSuccess = element => {
     inputControl.classList.remove('error');
 };
 
-
-form.addEventListener('submit', event => {
-    event.preventDefault();
-
-    validateInputs();
-});
 
 const isValidPhone = phone => {
     const re = /^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$/;
@@ -151,13 +165,15 @@ const isValidCity = city => {
     return re.test(String(city));
 };
 
+
 const isValidCountry = city => {
     const re = /^[a-zа-яё\s]+$/iu;
     return re.test(String(city));
 };
 
+
 const isValidUserName = username => {
-    const re = /^[a-zа-яё\s]+$/iu;
+    const re = /^([а-яё\s]+|[a-z\s]+)$/iu;
     return re.test(String(username));
 };
 
@@ -169,10 +185,10 @@ const validateInputs = () => {
           cityValue = city.value.trim(),
           postIndexValue = postIndex.value.trim();
 
-    if(usernameValue === '') {
+    if (usernameValue === '') {
         setError(userName, 'Укажите пожалуйста имя');
     } else if (!isValidUserName(usernameValue)) {
-        setError(userName, 'Имя не может состоять из цифр');
+        setError(userName, 'Имя не может состоять из цифр и содержать буквы с разных языков ');
     } else if (usernameValue.length < 4) {
         setError(userName, 'ФИО должно иметь минимум четыре символа');
     } else {
@@ -180,7 +196,7 @@ const validateInputs = () => {
     }
     
 
-    if(phoneValue === '') {
+    if (phoneValue === '') {
         setError(phone, 'Укажите пожалуйста мобильный телефон');
     } else if (!isValidPhone(phoneValue)){
         setError(phone, 'Укажите пожалуйста мобильный телефон в корректном формате');
@@ -188,7 +204,7 @@ const validateInputs = () => {
         setSuccess(phone);
     }
 
-    if(countryValue === '') {
+    if (countryValue === '') {
         setError(country, 'Укажите пожалуйста страну');
     } else if (!isValidCountry(countryValue)) {
         setError(country, 'Название страны должно состоять только из букв');
@@ -198,7 +214,7 @@ const validateInputs = () => {
         setSuccess(country);
     }
 
-    if(cityValue === '') {
+    if (cityValue === '') {
         setError(city, 'Укажите пожалуйста город');
     } else if (!isValidCity(cityValue)) {
         setError(city, 'Название города должно состоять только из букв');
@@ -208,7 +224,7 @@ const validateInputs = () => {
         setSuccess(city);
     }
 
-    if(postIndexValue === '') {
+    if (postIndexValue === '') {
         setError(postIndex, 'Укажите пожалуйста почтовый индекс');
     } else if (!isValidPostIndex(postIndexValue)) {
         setError(postIndex, 'Почтовый индекс должен состоять только из цифр в формате 55555, 55555-5555');
@@ -219,6 +235,12 @@ const validateInputs = () => {
     }
 };
 
+form.addEventListener('submit', event => {
+    event.preventDefault();
+
+    validateInputs();
+
+});
 
 
 

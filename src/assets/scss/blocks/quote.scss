@@ -1,5 +1,6 @@
 .quote {
     padding: 8.8rem 0 9.3rem;
+    
 
     &__item {
         display: flex;
@@ -10,6 +11,10 @@
         width: 31.25%;
         min-height: 408px;
         overflow: hidden;
+
+        @media (max-width: 565px) {
+            width: 100%;
+        }
     }
 
     &__img {
@@ -25,6 +30,28 @@
         width: 68.75%;
         padding-top: 8.9rem;
         padding-left: 7.1rem;
+
+        @media (max-width: 991px) {
+            padding-top: 7rem;
+            padding-left: 7.1rem;
+        }
+
+        @media (max-width: 767px) {
+            padding-top: 7rem;
+            padding-left: 4rem;
+        }
+
+        @media (max-width: 565px) {
+            width: 100%;
+            padding-left: 0;
+        }
+
+        @media (max-width: 320px) {
+            padding-left: 0;
+            padding-top: 3rem;
+        }
+
+        
     }
 
     &__icon {
@@ -33,5 +60,13 @@
         height: 85px;
 
         margin-bottom: 3.3rem;
+
+        @media (max-width: 767px) {
+            margin-bottom: 2rem;
+        }
+    }
+
+    @media (max-width: 565px) {
+        padding: 6.8rem 0 7.3rem;
     }
 }

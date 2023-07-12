@@ -35,6 +35,7 @@
 
         position: relative;
         z-index: 2;
+        
     }
 
     &__subtitle {
@@ -59,6 +60,16 @@
 
         text-align: left;
 
+        @media (max-width: 767px) {
+            padding: 3rem 2rem 0 3rem;
+            margin-bottom: -80px;
+        }
+
+        @media (max-width: 565px) {
+            margin-bottom: 0;
+            width: 100%;
+        }
+
         &-list {
             font-size: 2.4rem;
             color: $white;
@@ -73,7 +84,17 @@
 
                 &:last-child {
                     padding-bottom: 3.65rem;
+
+                    @media (max-width: 767px) {
+                        padding-bottom: 2.5rem;
+                    }
                 }
+            }
+            @media (max-width: 767px) {
+                padding-bottom: 2.5rem;
+                font-size: 1.8rem;
+                margin: 0 auto;
+                max-width: 250px;
             }
         }
     }

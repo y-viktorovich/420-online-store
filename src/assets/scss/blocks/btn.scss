@@ -38,4 +38,8 @@
             color: $black;
         }
     }
+
+    @media (max-width: 565px) {
+        font-size: 1.8rem;
+    }
 }

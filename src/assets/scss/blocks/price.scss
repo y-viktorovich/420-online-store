@@ -19,6 +19,17 @@
             left: 50%;
             z-index: 1;
         }
+
+        @media (max-width: 565px) {
+            font-size: 1.8rem;
+        }
+    }
+
+
+    &-new {
+        @media (max-width: 565px) {
+            font-size: 1.8rem;
+        }
     }
 
     &-text {

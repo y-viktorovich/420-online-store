@@ -10,8 +10,7 @@
     <meta name="robots" content="index, follow">
     <meta name="google" content="notranslate">
     <meta name="format-detection" content="telephone=no">
-    <meta name="description" content="">
-    
+    <meta name="description" content="Одежда на все случаи жизни">
     <title>420</title>
 </head>
 <body>
@@ -21,34 +20,43 @@
         <header class="header">
             <div class="container">
                 <div class="header__inner">
-                    <a class="header__logo" href="#">420</a>
-                    <nav class="nav">
-                        <div class="nav__info">
-                            <a class="nav__link" href="#">каталог</a>
-                            <a class="nav__link" href="#">о нас</a>
-                        </div>
-                    </nav>
+                    <a class="header__logo" href="index.html">420</a>
+                    <div class="wrapper">
+                        <nav class="nav">
+                            <div class="nav__info">
+                                <a class="nav__link" href="#">каталог</a>
+                                <a class="nav__link" href="#">о нас</a>
+                            </div>
+                        </nav>
         
-                    <nav class="nav__delivery">
-                        <a class="nav__link" href="#">доставка</a>
-                        <a class="nav__delivery-link" href="">
-                            <svg class="nav__link-icon">
-                                <use href="assets/images/svg/sprites.svg#cart"></use>
-                            </svg>  
-                        </a>
+                        <nav class="nav nav__delivery">
+                            <a class="nav__link" href="#" data-scroll="delivery">доставка</a>
+                            <a class="nav__delivery-link" href="cart.html">
+                                <svg class="nav__link-icon">
+                                    <use href="assets/images/svg/sprites.svg#cart"></use>
+                                </svg>  
+                            </a>
         
-                        <a class="nav__delivery-link" href="#">
-                            <svg class="nav__link-icon">
-                                <use href="../assets/images/svg/sprites.svg#instagram"></use>
-                            </svg>
-                        </a>
+                            <a class="nav__delivery-link" href="#" target="_blank">
+                                <svg class="nav__link-icon">
+                                    <use href="assets/images/svg/sprites.svg#instagram"></use>
+                                </svg>
+                            </a>
         
-                        <a class="nav__delivery-link" href="#">
-                            <svg class="nav__link-icon">
-                                <use href="../assets/images/svg/sprites.svg#facebook"></use>
-                            </svg>
-                        </a>
-                    </nav>
+                            <a class="nav__delivery-link" href="#" target="_blank">
+                                <svg class="nav__link-icon">
+                                    <use href="assets/images/svg/sprites.svg#facebook"></use>
+                                </svg>
+                            </a>
+                        </nav>
+                    </div>
+        
+                    <button class="burger" id="navToggle">
+                        <span class="burger__line">1</span>
+                        <span class="burger__line">1</span>
+                        <span class="burger__line">1</span>
+                        <span class="burger__line">1</span>
+                    </button>
                 </div><!-- /.header__inner -->
             </div><!-- /.container -->
         </header>
@@ -79,14 +87,14 @@
                     <div class="quote__item">
                         <div class="quote__photo">
                             <picture class="img">
-                                <source class="quote__img" srcset="../assets/images/quote/quote-1.webp" type="image/webp">
-                                <img class="quote__img" src="../assets/images/quote/quote-1.jpg" alt="Clothes">
+                                <source class="quote__img" srcset="assets/images/quote/quote-1.webp" type="image/webp">
+                                <img class="quote__img" src="assets/images/quote/quote-1.jpg" alt="Clothes">
                             </picture>
                         </div>
         
                         <div class="quote__text">
                             <svg class="quote__icon">
-                                <use href="../assets/images/svg/sprites.svg#brackets"></use>
+                                <use href="assets/images/svg/sprites.svg#brackets"></use>
                             </svg>
                             <p>420 Four TwoO — бренд с духом уличной культуры, для людей, которые хотят жить в мире, узнавать разные культуры, быть свободными от предрассудков и носить то, что раскрывает их как личность и отражает их жизненные ценности.</p>
                         </div>
@@ -110,8 +118,8 @@
                             <div class="recommendations__item">
                                 <a class="recommendations__photo" href="#">
                                     <picture class="img">
-                                        <source class="recommendations__img" srcset="../assets/images/new/new-1.webp" type="image/webp">
-                                        <img class="recommendations__img" src="../assets/images/quote/new-1.jpg" alt="Clothes">
+                                        <source class="recommendations__img" srcset="assets/images/new/new-1.webp" type="image/webp">
+                                        <img class="recommendations__img" src="assets/images/quote/new-1.jpg" alt="Clothes">
                                     </picture>
                                 </a>
         
@@ -124,8 +132,8 @@
                             <div class="recommendations__item">
                                 <a class="recommendations__photo" href="#">
                                     <picture class="img">
-                                        <source class="recommendations__img" srcset="../assets/images/new/new-2.webp" type="image/webp">
-                                        <img class="recommendations__img" src="../assets/images/quote/new-2.jpg" alt="Clothes">
+                                        <source class="recommendations__img" srcset="assets/images/new/new-2.webp" type="image/webp">
+                                        <img class="recommendations__img" src="assets/images/quote/new-2.jpg" alt="Clothes">
                                     </picture>
                                 </a>
         
@@ -138,8 +146,8 @@
                             <div class="recommendations__item">
                                 <a class="recommendations__photo" href="#">
                                     <picture class="img">
-                                        <source class="recommendations__img" srcset="../assets/images/new/new-3.webp" type="image/webp">
-                                        <img class="recommendations__img" src="../assets/images/quote/new-3.jpg" alt="Clothes">
+                                        <source class="recommendations__img" srcset="assets/images/new/new-3.webp" type="image/webp">
+                                        <img class="recommendations__img" src="assets/images/quote/new-3.jpg" alt="Clothes">
                                     </picture>
                                 </a>
         
@@ -154,8 +162,8 @@
                             <div class="recommendations__item">
                                 <a class="recommendations__photo" href="#">
                                     <picture class="img">
-                                        <source class="recommendations__img" srcset="../assets/images/new/new-4.webp" type="image/webp">
-                                        <img class="recommendations__img" src="../assets/images/quote/new-4.jpg" alt="Clothes">
+                                        <source class="recommendations__img" srcset="assets/images/new/new-4.webp" type="image/webp">
+                                        <img class="recommendations__img" src="assets/images/quote/new-4.jpg" alt="Clothes">
                                     </picture>
                                 </a>
         
@@ -168,8 +176,8 @@
                             <div class="recommendations__item">
                                 <a class="recommendations__photo" href="#">
                                     <picture class="img">
-                                        <source class="recommendations__img" srcset="../assets/images/new/new-5.webp" type="image/webp">
-                                        <img class="recommendations__img" src="../assets/images/quote/new-5.jpg" alt="Clothes">
+                                        <source class="recommendations__img" srcset="assets/images/new/new-5.webp" type="image/webp">
+                                        <img class="recommendations__img" src="assets/images/quote/new-5.jpg" alt="Clothes">
                                     </picture>
                                 </a>
         
@@ -182,8 +190,8 @@
                             <div class="recommendations__item">
                                 <a class="recommendations__photo" href="#">
                                     <picture class="img">
-                                        <source class="recommendations__img" srcset="../assets/images/new/new-6.webp" type="image/webp">
-                                        <img class="recommendations__img" src="../assets/images/quote/new-6.jpg" alt="Clothes">
+                                        <source class="recommendations__img" srcset="assets/images/new/new-6.webp" type="image/webp">
+                                        <img class="recommendations__img" src="assets/images/quote/new-6.jpg" alt="Clothes">
                                     </picture>
                                 </a>
         
@@ -203,7 +211,7 @@
             <div class="container">
                 <div class="action__inner">
                     <div class="action__content">
-                        <a class="action-link new__link" href="#">бейсболка Shot Black</a>
+                        <a class="action-link" href="#">бейсболка Shot Black</a>
                         <div class="action__incart">
                             <button class="btn" type="button">в корзину</button>
                             <div class="price">
@@ -217,7 +225,7 @@
         </div><!-- /.action -->
         
         <!-- Info -->
-        <section class="section">
+        <section class="section" id="delivery">
             <div class="container">
                 <div class="section__inner">
                     <h3 class="section__title">оплата и доставка<span>420</span></h3>
@@ -275,7 +283,7 @@
         
                         <li class="info__list-item">
                                 <svg class="info__list-icon">
-                                    <use href="../assets/images/svg/sprites.svg#phone"></use>
+                                    <use href="assets/images/svg/sprites.svg#phone"></use>
                                 </svg>
                             <a class="info__list-item__link" href="tel:+375447278642">
                                 +375 (44) 727 86 42
@@ -284,7 +292,7 @@
         
                         <li class="info__list-item">
                             <svg class="info__list-icon">
-                                <use href="../assets/images/svg/sprites.svg#mail"></use>
+                                <use href="assets/images/svg/sprites.svg#mail"></use>
                             </svg>
                             <a class="info__list-item__link" href="mailto:sale@420fourtwoo.by">
                                 sale@420fourtwoo.by
@@ -301,15 +309,15 @@
             <div class="container">
                 <div class="footer__inner">
                     <div class="footer__logo">
-                        <a class="footer__icon" href="#">420</a>
+                        <a class="footer__icon" href="index.html">420</a>
                         <div class="nav nav__col">
                             <ul class="nav__list">
                                 <li class="nav__list-item">
-                                    <a class="nav__list-item__link" href="#">+375 (44) 727 86 42</a>
+                                    <a class="nav__list-item__link" href="tel:+375447278642">+375 (44) 727 86 42</a>
                                 </li>
         
                                 <li class="nav__list-item">
-                                    <a class="nav__list-item__link" href="#">sale@420fourtwoo.by</a>
+                                    <a class="nav__list-item__link" href="mailto:sale@420fourtwoo.by">sale@420fourtwoo.by</a>
                                 </li>
                             </ul>
                         </div>
@@ -346,21 +354,21 @@
         
                     <nav class="nav__delivery">
                         <a class="nav__link" href="#">доставка</a>
-                        <a class="nav__delivery-link" href="">
+                        <a class="nav__delivery-link" href="cart.html">
                             <svg class="nav__link-icon">
-                                <use href="../assets/images/svg/sprites.svg#cart"></use>
+                                <use href="assets/images/svg/sprites.svg#cart"></use>
                             </svg>  
                         </a>
         
-                        <a class="nav__delivery-link" href="#">
+                        <a class="nav__delivery-link" href="#" target="_blank">
                             <svg class="nav__link-icon">
-                                <use href="../assets/images/svg/sprites.svg#instagram"></use>
+                                <use href="assets/images/svg/sprites.svg#instagram"></use>
                             </svg>
                         </a>
         
-                        <a class="nav__delivery-link" href="#">
+                        <a class="nav__delivery-link" href="#" target="_blank">
                             <svg class="nav__link-icon">
-                                <use href="../assets/images/svg/sprites.svg#facebook"></use>
+                                <use href="assets/images/svg/sprites.svg#facebook"></use>
                             </svg>
                         </a>
                     </nav>
@@ -375,5 +383,6 @@
         </footer>
     </div>
 
+    <script src="assets/js/app.js"></script>
 </body>
 </html>

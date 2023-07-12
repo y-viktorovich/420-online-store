@@ -10,10 +10,18 @@
 
     &__col--left {
         width: 52.88%;
+
+        @media (max-width: 565px) {
+            width: 100%;
+        }
     }
 
     &__col--right {
         width: 47.12%;
+        
+        @media (max-width: 565px) {
+            width: 100%;
+        }
     }
 
     &__item {
@@ -30,6 +38,10 @@
 
                 transform: translateY(10px);
             }
+        }
+
+        @media (max-width: 565px) {
+            padding: 0 3.2rem 2.2rem;
         }
     }
 
@@ -64,6 +76,14 @@
         &:hover {
             text-decoration: underline;
         }
+
+        @media (max-width: 565px) {
+            padding-right: .2rem;
+        }
+
+        @media (max-width: 320px) {
+            margin-bottom: 1.5rem;
+        }
     }
 
     &__content {
@@ -81,6 +101,16 @@
         transform: translateY(-50px);
 
         transition: transform .4s ease-in-out, opacity .1s linear, margin-bottom .2s;
+
+        @media (max-width: 565px) {
+            margin-bottom: 0;
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        @media (max-width: 320px) {
+            flex-direction: column;
+        }
     }
 
     &--product {

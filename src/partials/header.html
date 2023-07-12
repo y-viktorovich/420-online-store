@@ -2,34 +2,43 @@
 <header class="header">
     <div class="container">
         <div class="header__inner">
-            <a class="header__logo" href="#">420</a>
-            <nav class="nav">
-                <div class="nav__info">
-                    <a class="nav__link" href="#">каталог</a>
-                    <a class="nav__link" href="#">о нас</a>
-                </div>
-            </nav>
+            <a class="header__logo" href="index.html">420</a>
+            <div class="wrapper">
+                <nav class="nav">
+                    <div class="nav__info">
+                        <a class="nav__link" href="#">каталог</a>
+                        <a class="nav__link" href="#">о нас</a>
+                    </div>
+                </nav>
 
-            <nav class="nav__delivery">
-                <a class="nav__link" href="#">доставка</a>
-                <a class="nav__delivery-link" href="">
-                    <svg class="nav__link-icon">
-                        <use href="assets/images/svg/sprites.svg#cart"></use>
-                    </svg>  
-                </a>
+                <nav class="nav nav__delivery">
+                    <a class="nav__link" href="#" data-scroll="delivery">доставка</a>
+                    <a class="nav__delivery-link" href="cart.html">
+                        <svg class="nav__link-icon">
+                            <use href="assets/images/svg/sprites.svg#cart"></use>
+                        </svg>  
+                    </a>
 
-                <a class="nav__delivery-link" href="#">
-                    <svg class="nav__link-icon">
-                        <use href="../assets/images/svg/sprites.svg#instagram"></use>
-                    </svg>
-                </a>
+                    <a class="nav__delivery-link" href="#" target="_blank">
+                        <svg class="nav__link-icon">
+                            <use href="assets/images/svg/sprites.svg#instagram"></use>
+                        </svg>
+                    </a>
 
-                <a class="nav__delivery-link" href="#">
-                    <svg class="nav__link-icon">
-                        <use href="../assets/images/svg/sprites.svg#facebook"></use>
-                    </svg>
-                </a>
-            </nav>
+                    <a class="nav__delivery-link" href="#" target="_blank">
+                        <svg class="nav__link-icon">
+                            <use href="assets/images/svg/sprites.svg#facebook"></use>
+                        </svg>
+                    </a>
+                </nav>
+            </div>
+
+            <button class="burger" id="navToggle">
+                <span class="burger__line">1</span>
+                <span class="burger__line">1</span>
+                <span class="burger__line">1</span>
+                <span class="burger__line">1</span>
+            </button>
         </div><!-- /.header__inner -->
     </div><!-- /.container -->
 </header>

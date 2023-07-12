@@ -1,17 +1,23 @@
 .header {
     width: 100%;
 
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 1000;
+    
 
     &__inner {
-        display: flex;
-        justify-content: space-between;
+        // display: flex;
+        // justify-content: space-between;
         padding: 8.4rem 0;
 
-        position: relative;
+        @media (max-width: 991px) {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        // position: relative;
     }
 
     &__logo {
@@ -27,10 +33,14 @@
         transform: translate3d(-50%, -50%, 0);
         z-index: 1;
 
-        transition: .2s linear;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 1px $white;
+
+        transition: text-shadow .2s linear;
 
         &:hover {
-            opacity: 0.65;
+            opacity: 1;
+            text-shadow: -3px 0px $white;
         }
     }
 
