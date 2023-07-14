@@ -47,7 +47,7 @@ let deliverySection = document.querySelector('#delivery');
         });
     }
 
-//  Блок галереї
+//  Gallery tabs
 
 let mainPhoto = document.querySelectorAll('.product__gallery-header__photo'),
     tabPhoto = document.querySelectorAll('.product__gallery-footer__photo');
@@ -126,7 +126,7 @@ document.addEventListener('keydown', (event) => {
 });
 
 
-// Закриття карти з товаром
+// Close cart item
 
 let cart = document.getElementsByClassName('cart__item'),
     test = document.querySelectorAll('[data-cart]'),
@@ -147,7 +147,7 @@ closeBtn.forEach((item, i) => {
 });
 
 
-//  Валідація форми
+//  Forms validation
 
 let form = document.querySelector('#form'),
     userName = document.querySelector('#username'),
@@ -269,7 +269,6 @@ form.addEventListener('submit', event => {
     event.preventDefault();
 
     validateInputs();
-
 });
 
 
