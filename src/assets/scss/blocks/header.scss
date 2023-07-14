@@ -5,19 +5,16 @@
     top: 0;
     left: 0;
     z-index: 1000;
-    
 
     &__inner {
-        // display: flex;
-        // justify-content: space-between;
         padding: 8.4rem 0;
 
+        transition: padding .2s linear;
         @media (max-width: 991px) {
             display: flex;
             justify-content: flex-end;
+            padding: 3rem 0;
         }
-
-        // position: relative;
     }
 
     &__logo {
@@ -42,6 +39,10 @@
             opacity: 1;
             text-shadow: -3px 0px $white;
         }
+
+        @media (max-width: 565px) {
+            font-size: 3.6rem;
+        }
     }
 
     &--black {
@@ -49,6 +50,10 @@
 
         .header__inner {
             padding: 7.1rem 0;
+
+            @media (max-width: 991px) {
+                padding: 3.6rem 0;
+            }
         }
     }
 }

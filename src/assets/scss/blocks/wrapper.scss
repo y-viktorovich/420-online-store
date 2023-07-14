@@ -6,12 +6,13 @@
     position: relative;
     @media (max-width: 991px) {
         width: 100%;
-        min-height: 100vh;
+        height: calc(100vh - 90px);
         padding-right: 2.5rem;
 
         display: flex;
         justify-content: flex-start;
         flex-direction: column;
+        overflow: auto;
 
         position: absolute;
         top: 100%;
@@ -24,5 +25,9 @@
 
         background-color: rgba($black, 0.7);
         background-size: cover;
+    }
+
+    &.show {
+        transform: translateX(0);
     }
 }

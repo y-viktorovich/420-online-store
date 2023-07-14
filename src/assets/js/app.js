@@ -1,4 +1,34 @@
-//  Плавний скролл
+//  Change color header
+
+const header = document.querySelector('#header');
+
+window.addEventListener('scroll', (event) => {
+
+
+    if(!header.classList.contains('header--black')) {
+        document.documentElement.scrollTop > 1 ? header.classList.add('header--black') : header.classList.remove('header--black');
+    }
+});
+
+
+//  Burger menu
+
+const burgerBtn = document.querySelector('#navToggle'),
+      nav = document.querySelector('#nav'),
+      body = document.querySelector('body');
+
+
+burgerBtn.addEventListener('click', (event) => {
+    event.preventDefault();
+
+    burgerBtn.classList.toggle('active');
+    nav.classList.toggle('show');
+    body.classList.toggle('show-nav');
+
+});
+
+
+//  Smooth scroll
 
 let deliverySection = document.querySelector('#delivery');
     deliveryBtn = document.querySelector('[data-scroll]');

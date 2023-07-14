@@ -1,5 +1,9 @@
 .price {
-    padding-left: 6.2rem;
+    padding-left: 5.4rem;
+
+    @media (max-width: 991px) {
+        padding-left: 4.3rem;
+    }
 
     &-old {
         margin-bottom: .6rem;
@@ -27,7 +31,7 @@
 
 
     &-new {
-        @media (max-width: 565px) {
+        @media (max-width: 767px) {
             font-size: 1.8rem;
         }
     }

@@ -1,78 +1,85 @@
 .burger {
+    width: 50px;
+    padding: 15px 0;
     display: none;
-    width: 40px;
-    height: 40px;
-    padding: 0;
-    cursor: pointer;
-    background: none;
-    border: none;
-    position: relative;
-
     font-size: 0;
     color: transparent;
+    border: 0;
+    background: none;
+    cursor: pointer;
+    position: relative;
+
+    margin-right: auto;
 
     &:focus {
-        outline: none;
+        outline: 0;
     }
 
-    &.active {
-        .burger__line:nth-child(1), .burger__line:nth-child(4) {
-            width: 0;
-            transform-origin: left;
-        }
+    &__item {
+        display: block;
+        width: 100%;
+        height: 1px;
+        background-color: #fff;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        transition: background .2s linear;
+    }
 
-        .burger__line:nth-child(2),
-        .burger__line:nth-child(3) {
-            position: absolute;
-            width: 100%;
-            top: 50%;
-            left: 0;
-            z-index: 1;
+    &.active .burger__item {
+        background: none;
+    }
 
-        }
+    &__item:before,
+    &__item:after {
+        content: "";
+        width: 100%;
+        height: 1px;
+        background-color: #fff;
+        position: absolute;
+        left: 0;
+        z-index: 1;
+        transition: transform .2s linear;
+    }
 
-        .burger__line:nth-child(2) {
-            transform: rotate(-45deg);
-        }
+    &__item:after {
+        bottom: -8px;
+    }
 
-        .burger__line:nth-child(3) {
-            transform: rotate(45deg);
-        }
+    &__item:before {
+        top: -8px;
+    }
+
+    &.active .burger__item:before {
+        top: 0;
+        transform: rotate(45deg);
+    
+    }
+
+    &.active .burger__item:after {
+        bottom: 0;
+        transform: rotate(-45deg);
     }
 
     @media (max-width: 991px) {
         display: block;
     }
-
 }
 
-.burger__line {
-    display: block;
-    width: 100%;
-    height: 2px;
-    margin: 5px 0;
-    background-color: $white;
-    border-radius: 1px;
 
-    transition: width .2s ease-out, transform .2s ease-out;
 
-    &:nth-child(1) {
-        width: 30px;
-        margin-left: auto;
-    }
 
-    &:nth-child(2) {
-        width: 30px;
-        margin-right: auto;
-    }
 
-    &:nth-child(3) {
-        width: 30px;
-        margin-left: auto;
-    }
 
-    &:nth-child(4) {
-        width: 30px;
-        margin-right: auto;
-    }
-}
+
+
+
+
+
+
+
+
+

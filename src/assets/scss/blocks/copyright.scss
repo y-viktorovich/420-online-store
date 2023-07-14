@@ -1,6 +1,10 @@
 .copyright {
     padding: 5.2rem 0 6.4rem;
 
+    @media (max-width: 320px) {
+        padding: 4.2rem 0 5.4rem;
+    }
+
     &__text {
         font-family: 'Raleway', sans-serif;
         font-size: 1.8rem;
@@ -8,5 +12,10 @@
         line-height: 1.2;
         text-align: center;
         opacity: .5;
+
+        @media (max-width: 767px) {
+            max-width: 250px;
+            text-align: left;
+        }
     }
 }

@@ -11,17 +11,17 @@
     <meta name="google" content="notranslate">
     <meta name="format-detection" content="telephone=no">
     <meta name="description" content="Одежда на все случаи жизни">
-    <title>420</title>
+    <title>Интернет магазин одежды</title>
 </head>
 <body>
 
     <div class="page">
         <!-- Header -->
-        <header class="header header--black">
+        <header class="header header--black" id="header">
             <div class="container">
                 <div class="header__inner">
-                    <div class="wrapper">
-                        <a class="header__logo" href="index.html">420</a>
+                    <a class="header__logo" href="index.html">420</a>
+                    <div class="wrapper" id="nav">
                         <nav class="nav">
                             <div class="nav__info">
                                 <a class="nav__link" href="#">каталог</a>
@@ -29,27 +29,34 @@
                             </div>
                         </nav>
         
-                        <nav class="nav__delivery">
-                            <a class="nav__link" href="index.html">доставка</a>
-                            <a class="nav__delivery-link" href="">
-                                <svg class="nav__link-icon">
-                                    <use href="assets/images/svg/sprites.svg#cart"></use>
-                                </svg>  
-                            </a>
+                        <nav class="nav nav__delivery">
+                            <a class="nav__link" href="index.html" data-scroll="delivery">доставка</a>
         
-                            <a class="nav__delivery-link" href="#" target="_blank">
-                                <svg class="nav__link-icon">
-                                    <use href="assets/images/svg/sprites.svg#instagram"></use>
-                                </svg>
-                            </a>
+                            <div class="flex">
+                                <a class="nav__delivery-link" href="cart.html">
+                                    <svg class="nav__link-icon">
+                                        <use href="assets/images/svg/sprites.svg#cart"></use>
+                                    </svg>  
+                                </a>
         
-                            <a class="nav__delivery-link" href="#" target="_blank">
-                                <svg class="nav__link-icon">
-                                    <use href="assets/images/svg/sprites.svg#facebook"></use>
-                                </svg>
-                            </a>
+                                <a class="nav__delivery-link" href="#" target="_blank">
+                                    <svg class="nav__link-icon">
+                                        <use href="assets/images/svg/sprites.svg#instagram"></use>
+                                    </svg>
+                                </a>
+        
+                                <a class="nav__delivery-link" href="#" target="_blank">
+                                    <svg class="nav__link-icon">
+                                        <use href="assets/images/svg/sprites.svg#facebook"></use>
+                                    </svg>
+                                </a>
+                            </div>
                         </nav>
                     </div>
+        
+                    <button class="burger" id="navToggle">
+                        <span class="burger__item">1</span>
+                    </button>
                 </div><!-- /.header__inner -->
             </div><!-- /.container -->
         </header>
@@ -80,22 +87,22 @@
         
                         <div class="cart__text">
                             <div class="cart__description">
-                                <h3 class="cart__title">худи St. Helens худи St. Helens</h3>
+                                <div class="cart__title">худи St. Helens худи St. Helens
+                                    <div class="dropdown">
+                                        <button class="dropdown__button">M</button>
+                                        <ul class="dropdown__list">
+                                            <li class="dropdown__item" data-value="XS">XS</li>
+                                            <li class="dropdown__item" data-value="S">S</li>
+                                            <li class="dropdown__item" data-value="M">M</li>
+                                            <li class="dropdown__item" data-value="L">L</li>
+                                            <li class="dropdown__item" data-value="XL">XL</li>
+                                            <li class="dropdown__item" data-value="XXL">XXL</li>
+                                        </ul>
+                                    </div>
+                                </div>
         
-                                <div class="price-new">23,40 руб</div>
-                            </div>
-        
-                            <div>
-                                <div class="dropdown">
-                                    <button class="dropdown__button">M</button>
-                                    <ul class="dropdown__list">
-                                        <li class="dropdown__item" data-value="XS">XS</li>
-                                        <li class="dropdown__item" data-value="S">S</li>
-                                        <li class="dropdown__item" data-value="M">M</li>
-                                        <li class="dropdown__item" data-value="L">L</li>
-                                        <li class="dropdown__item" data-value="XL">XL</li>
-                                        <li class="dropdown__item" data-value="XXL">XXL</li>
-                                    </ul>
+                                <div class="cart__price">
+                                    <div class="price-new">95 руб</div>
                                 </div>
                             </div>
                         </div><!-- /.cart__text -->
@@ -117,32 +124,32 @@
         
                         <div class="cart__text">
                             <div class="cart__description">
-                                <h3 class="cart__title">худи St. Helens худи St. Helens</h3>
+                                <div class="cart__title">бейсболка Shot Black
+                                    <div class="dropdown">
+                                        <button class="dropdown__button">M</button>
+                                        <ul class="dropdown__list">
+                                            <li class="dropdown__item" data-value="XS">XS</li>
+                                            <li class="dropdown__item" data-value="S">S</li>
+                                            <li class="dropdown__item" data-value="M">M</li>
+                                            <li class="dropdown__item" data-value="L">L</li>
+                                            <li class="dropdown__item" data-value="XL">XL</li>
+                                            <li class="dropdown__item" data-value="XXL">XXL</li>
+                                        </ul>
+                                    </div>
+                                </div>
         
-                                <div class="price-old">294,40 руб</div>
-                                <div class="price-new">23,40 руб</div>
-                            </div>
-        
-                            <div>
-                                <div class="dropdown">
-                                    <button class="dropdown__button">M</button>
-                                    <ul class="dropdown__list">
-                                        <li class="dropdown__item" data-value="XS">XS</li>
-                                        <li class="dropdown__item" data-value="S">S</li>
-                                        <li class="dropdown__item" data-value="M">M</li>
-                                        <li class="dropdown__item" data-value="L">L</li>
-                                        <li class="dropdown__item" data-value="XL">XL</li>
-                                        <li class="dropdown__item" data-value="XXL">XXL</li>
-                                    </ul>
+                                <div class="cart__price">
+                                    <div class="price-old">294,40 руб</div>
+                                    <div class="price-new">23,40 руб</div>
                                 </div>
                             </div>
-                        </div><!-- /.cart__text -->
         
-                        <button class="cart__close" data-close type="button">
-                            <svg class="cart__close-icon">
-                                <use href="assets/images/svg/sprites.svg#close"></use>
-                            </svg>
-                        </button>
+                            <button class="cart__close" data-close type="button">
+                                <svg class="cart__close-icon">
+                                    <use href="assets/images/svg/sprites.svg#close"></use>
+                                </svg>
+                            </button>
+                        </div><!-- /.cart__text -->
                     </div><!-- /.cart__item -->
                 </div><!-- /.cart__inner -->
             </div><!-- /.container -->
@@ -150,7 +157,6 @@
         
         <!-- Info -->
         <div class="info">
-            
         
         
             <!-- Request -->
@@ -248,7 +254,7 @@
                             </ul>
                         </div>
                     </div>
-                    <nav class="nav">
+                    <nav class="nav footer__nav">
                         <div class="nav__info">
                             <a class="nav__link" href="#">каталог</a>
                             <a class="nav__link" href="#">о нас</a>
@@ -280,23 +286,26 @@
         
                     <nav class="nav__delivery">
                         <a class="nav__link" href="#">доставка</a>
-                        <a class="nav__delivery-link" href="cart.html">
-                            <svg class="nav__link-icon">
-                                <use href="assets/images/svg/sprites.svg#cart"></use>
-                            </svg>  
-                        </a>
         
-                        <a class="nav__delivery-link" href="#" target="_blank">
-                            <svg class="nav__link-icon">
-                                <use href="assets/images/svg/sprites.svg#instagram"></use>
-                            </svg>
-                        </a>
+                        <div class="flex">
+                            <a class="nav__delivery-link" href="cart.html">
+                                <svg class="nav__link-icon">
+                                    <use href="assets/images/svg/sprites.svg#cart"></use>
+                                </svg>  
+                            </a>
         
-                        <a class="nav__delivery-link" href="#" target="_blank">
-                            <svg class="nav__link-icon">
-                                <use href="assets/images/svg/sprites.svg#facebook"></use>
-                            </svg>
-                        </a>
+                            <a class="nav__delivery-link" href="#" target="_blank">
+                                <svg class="nav__link-icon">
+                                    <use href="assets/images/svg/sprites.svg#instagram"></use>
+                                </svg>
+                            </a>
+        
+                            <a class="nav__delivery-link" href="#" target="_blank">
+                                <svg class="nav__link-icon">
+                                    <use href="assets/images/svg/sprites.svg#facebook"></use>
+                                </svg>
+                            </a>
+                        </div>
                     </nav>
                 </div><!-- /.footer__inner -->
             </div><!-- /.container -->

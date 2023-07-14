@@ -11,17 +11,17 @@
     <meta name="google" content="notranslate">
     <meta name="format-detection" content="telephone=no">
     <meta name="description" content="Одежда на все случаи жизни">
-    <title>420</title>
+    <title>Интернет магазин одежды</title>
 </head>
 <body>
 
     <div class="page">
         <!-- Header -->
-        <header class="header">
+        <header class="header" id="header">
             <div class="container">
                 <div class="header__inner">
                     <a class="header__logo" href="index.html">420</a>
-                    <div class="wrapper">
+                    <div class="wrapper" id="nav">
                         <nav class="nav">
                             <div class="nav__info">
                                 <a class="nav__link" href="#">каталог</a>
@@ -31,31 +31,31 @@
         
                         <nav class="nav nav__delivery">
                             <a class="nav__link" href="#" data-scroll="delivery">доставка</a>
-                            <a class="nav__delivery-link" href="cart.html">
-                                <svg class="nav__link-icon">
-                                    <use href="assets/images/svg/sprites.svg#cart"></use>
-                                </svg>  
-                            </a>
         
-                            <a class="nav__delivery-link" href="#" target="_blank">
-                                <svg class="nav__link-icon">
-                                    <use href="assets/images/svg/sprites.svg#instagram"></use>
-                                </svg>
-                            </a>
+                            <div class="flex">
+                                <a class="nav__delivery-link" href="cart.html">
+                                    <svg class="nav__link-icon">
+                                        <use href="assets/images/svg/sprites.svg#cart"></use>
+                                    </svg>  
+                                </a>
         
-                            <a class="nav__delivery-link" href="#" target="_blank">
-                                <svg class="nav__link-icon">
-                                    <use href="assets/images/svg/sprites.svg#facebook"></use>
-                                </svg>
-                            </a>
+                                <a class="nav__delivery-link" href="#" target="_blank">
+                                    <svg class="nav__link-icon">
+                                        <use href="assets/images/svg/sprites.svg#instagram"></use>
+                                    </svg>
+                                </a>
+        
+                                <a class="nav__delivery-link" href="#" target="_blank">
+                                    <svg class="nav__link-icon">
+                                        <use href="assets/images/svg/sprites.svg#facebook"></use>
+                                    </svg>
+                                </a>
+                            </div>
                         </nav>
                     </div>
         
                     <button class="burger" id="navToggle">
-                        <span class="burger__line">1</span>
-                        <span class="burger__line">1</span>
-                        <span class="burger__line">1</span>
-                        <span class="burger__line">1</span>
+                        <span class="burger__item">1</span>
                     </button>
                 </div><!-- /.header__inner -->
             </div><!-- /.container -->
@@ -156,7 +156,7 @@
                                     <button class="btn" type="button">в корзину</button>
                                 </div>
                             </div>
-                        </div><!-- /.new__col new__col--left-->
+                        </div><!-- /.recommendations__col recommendations__col--left-->
         
                         <div class="recommendations__col recommendations__col--right">
                             <div class="recommendations__item">
@@ -200,7 +200,7 @@
                                     <button class="btn" type="button">в корзину</button>
                                 </div>
                             </div>
-                        </div><!-- /.new__col new__col--right-->
+                        </div><!-- /.recommendations__col recommendations__col--right-->
                     </div><!-- /.new__inner -->
                 </div><!-- /.container -->
             </div><!-- /.new -->
@@ -322,7 +322,7 @@
                             </ul>
                         </div>
                     </div>
-                    <nav class="nav">
+                    <nav class="nav footer__nav">
                         <div class="nav__info">
                             <a class="nav__link" href="#">каталог</a>
                             <a class="nav__link" href="#">о нас</a>
@@ -354,23 +354,26 @@
         
                     <nav class="nav__delivery">
                         <a class="nav__link" href="#">доставка</a>
-                        <a class="nav__delivery-link" href="cart.html">
-                            <svg class="nav__link-icon">
-                                <use href="assets/images/svg/sprites.svg#cart"></use>
-                            </svg>  
-                        </a>
         
-                        <a class="nav__delivery-link" href="#" target="_blank">
-                            <svg class="nav__link-icon">
-                                <use href="assets/images/svg/sprites.svg#instagram"></use>
-                            </svg>
-                        </a>
+                        <div class="flex">
+                            <a class="nav__delivery-link" href="cart.html">
+                                <svg class="nav__link-icon">
+                                    <use href="assets/images/svg/sprites.svg#cart"></use>
+                                </svg>  
+                            </a>
         
-                        <a class="nav__delivery-link" href="#" target="_blank">
-                            <svg class="nav__link-icon">
-                                <use href="assets/images/svg/sprites.svg#facebook"></use>
-                            </svg>
-                        </a>
+                            <a class="nav__delivery-link" href="#" target="_blank">
+                                <svg class="nav__link-icon">
+                                    <use href="assets/images/svg/sprites.svg#instagram"></use>
+                                </svg>
+                            </a>
+        
+                            <a class="nav__delivery-link" href="#" target="_blank">
+                                <svg class="nav__link-icon">
+                                    <use href="assets/images/svg/sprites.svg#facebook"></use>
+                                </svg>
+                            </a>
+                        </div>
                     </nav>
                 </div><!-- /.footer__inner -->
             </div><!-- /.container -->

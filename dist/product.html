@@ -11,17 +11,17 @@
     <meta name="google" content="notranslate">
     <meta name="format-detection" content="telephone=no">
     <meta name="description" content="Одежда на все случаи жизни">
-    <title>420</title>
+    <title>Интернет магазин одежды</title>
 </head>
 <body>
 
     <div class="page">
         <!-- Header -->
-        <header class="header header--black">
+        <header class="header header--black" id="header">
             <div class="container">
                 <div class="header__inner">
-                    <div class="wrapper">
-                        <a class="header__logo" href="index.html">420</a>
+                    <a class="header__logo" href="index.html">420</a>
+                    <div class="wrapper" id="nav">
                         <nav class="nav">
                             <div class="nav__info">
                                 <a class="nav__link" href="#">каталог</a>
@@ -29,27 +29,34 @@
                             </div>
                         </nav>
         
-                        <nav class="nav__delivery">
-                            <a class="nav__link" href="index.html">доставка</a>
-                            <a class="nav__delivery-link" href="">
-                                <svg class="nav__link-icon">
-                                    <use href="assets/images/svg/sprites.svg#cart"></use>
-                                </svg>  
-                            </a>
+                        <nav class="nav nav__delivery">
+                            <a class="nav__link" href="index.html" data-scroll="delivery">доставка</a>
         
-                            <a class="nav__delivery-link" href="#" target="_blank">
-                                <svg class="nav__link-icon">
-                                    <use href="assets/images/svg/sprites.svg#instagram"></use>
-                                </svg>
-                            </a>
+                            <div class="flex">
+                                <a class="nav__delivery-link" href="cart.html">
+                                    <svg class="nav__link-icon">
+                                        <use href="assets/images/svg/sprites.svg#cart"></use>
+                                    </svg>  
+                                </a>
         
-                            <a class="nav__delivery-link" href="#" target="_blank">
-                                <svg class="nav__link-icon">
-                                    <use href="assets/images/svg/sprites.svg#facebook"></use>
-                                </svg>
-                            </a>
+                                <a class="nav__delivery-link" href="#" target="_blank">
+                                    <svg class="nav__link-icon">
+                                        <use href="assets/images/svg/sprites.svg#instagram"></use>
+                                    </svg>
+                                </a>
+        
+                                <a class="nav__delivery-link" href="#" target="_blank">
+                                    <svg class="nav__link-icon">
+                                        <use href="assets/images/svg/sprites.svg#facebook"></use>
+                                    </svg>
+                                </a>
+                            </div>
                         </nav>
                     </div>
+        
+                    <button class="burger" id="navToggle">
+                        <span class="burger__item">1</span>
+                    </button>
                 </div><!-- /.header__inner -->
             </div><!-- /.container -->
         </header>
@@ -74,22 +81,22 @@
                         <div class="product__gallery-header">
                             <a class="product__gallery-header__photo show" href="#">
                                 <picture class="img">
-                                    <source class="product__gallery-header__photo-img" srcset="assets/images/new/new-4.webp" type="image/webp">
-                                    <img class="product__gallery-header__photo-img" src="assets/images/quote/new-4.jpg" alt="Clothes">
+                                    <source class="product__gallery-header__photo-img" srcset="assets/images/all-product/clothe-4.webp" type="image/webp">
+                                    <img class="product__gallery-header__photo-img" src="assets/images/all-product/clothe-4.jpg" alt="Clothes">
                                 </picture>
                             </a>
         
                             <a class="product__gallery-header__photo hide" href="#">
                                 <picture class="img">
-                                    <source class="product__gallery-header__photo-img" srcset="assets/images/new/new-4.webp" type="image/webp">
-                                    <img class="product__gallery-header__photo-img" src="assets/images/quote/new-4.jpg" alt="Clothes">
+                                    <source class="product__gallery-header__photo-img" srcset="assets/images/all-product/clothe-5.webp" type="image/webp">
+                                    <img class="product__gallery-header__photo-img" src="assets/images/all-product/clothe-5.jpg" alt="Clothes">
                                 </picture>
                             </a>
         
                             <a class="product__gallery-header__photo hide" href="#">
                                 <picture class="img">
-                                    <source class="product__gallery-header__photo-img" srcset="assets/images/new/new-4.webp" type="image/webp">
-                                    <img class="product__gallery-header__photo-img" src="assets/images/quote/new-4.jpg" alt="Clothes">
+                                    <source class="product__gallery-header__photo-img" srcset="assets/images/all-product/clothe-6.webp" type="image/webp">
+                                    <img class="product__gallery-header__photo-img" src="assets/images/all-product/clothe-6.jpg" alt="Clothes">
                                 </picture>
                             </a>
                         </div>
@@ -97,22 +104,22 @@
                         <div class="product__gallery-footer">
                             <a class="product__gallery-footer__photo" href="#">
                                 <picture class="img">
-                                    <source class="product__gallery-footer__photo-img" srcset="assets/images/new/new-4.webp" type="image/webp">
-                                    <img class="product__gallery-footer__photo-img" src="assets/images/quote/new-4.jpg" alt="Clothes">
+                                    <source class="product__gallery-footer__photo-img" srcset="assets/images/all-product/clothe-4.webp" type="image/webp">
+                                    <img class="product__gallery-footer__photo-img" src="assets/images/all-product/clothe-4.jpg" alt="Clothes">
                                 </picture>
                             </a>
         
                             <a class="product__gallery-footer__photo" href="#">
                                 <picture class="img">
-                                    <source class="product__gallery-footer__photo-img" srcset="assets/images/new/new-4.webp" type="image/webp">
-                                    <img class="product__gallery-footer__photo-img" src="assets/images/quote/new-4.jpg" alt="Clothes">
+                                    <source class="product__gallery-footer__photo-img" srcset="assets/images/all-product/clothe-5.webp" type="image/webp">
+                                    <img class="product__gallery-footer__photo-img" src="assets/images/all-product/clothe-5.jpg" alt="Clothes">
                                 </picture>
                             </a>
         
                             <a class="product__gallery-footer__photo" href="#">
                                 <picture class="img">
-                                    <source class="product__gallery-footer__photo-img" srcset="assets/images/new/new-4.webp" type="image/webp">
-                                    <img class="product__gallery-footer__photo-img" src="assets/images/quote/new-4.jpg" alt="Clothes">
+                                    <source class="product__gallery-footer__photo-img" srcset="assets/images/all-product/clothe-6.webp" type="image/webp">
+                                    <img class="product__gallery-footer__photo-img" src="assets/images/all-product/clothe-6.jpg" alt="Clothes">
                                 </picture>
                             </a>
                         </div><!-- /.product__gallery-footer -->
@@ -205,7 +212,7 @@
                                     <button class="btn" type="button">в корзину</button>
                                 </div>
                             </div>
-                        </div><!-- /.new__col new__col--left-->
+                        </div><!-- /.recommendations__col recommendations__col--left-->
         
                         <div class="recommendations__col recommendations__col--right">
                             <div class="recommendations__item">
@@ -235,7 +242,7 @@
                                     <button class="btn" type="button">в корзину</button>
                                 </div>
                             </div>
-                        </div><!-- /.new__col new__col--right-->
+                        </div><!-- /.recommendations__col recommendations__col--right-->
                     </div><!-- /.new__inner -->
                 </div><!-- /.container -->
         
@@ -282,7 +289,7 @@
                             </ul>
                         </div>
                     </div>
-                    <nav class="nav">
+                    <nav class="nav footer__nav">
                         <div class="nav__info">
                             <a class="nav__link" href="#">каталог</a>
                             <a class="nav__link" href="#">о нас</a>
@@ -314,23 +321,26 @@
         
                     <nav class="nav__delivery">
                         <a class="nav__link" href="#">доставка</a>
-                        <a class="nav__delivery-link" href="cart.html">
-                            <svg class="nav__link-icon">
-                                <use href="assets/images/svg/sprites.svg#cart"></use>
-                            </svg>  
-                        </a>
         
-                        <a class="nav__delivery-link" href="#" target="_blank">
-                            <svg class="nav__link-icon">
-                                <use href="assets/images/svg/sprites.svg#instagram"></use>
-                            </svg>
-                        </a>
+                        <div class="flex">
+                            <a class="nav__delivery-link" href="cart.html">
+                                <svg class="nav__link-icon">
+                                    <use href="assets/images/svg/sprites.svg#cart"></use>
+                                </svg>  
+                            </a>
         
-                        <a class="nav__delivery-link" href="#" target="_blank">
-                            <svg class="nav__link-icon">
-                                <use href="assets/images/svg/sprites.svg#facebook"></use>
-                            </svg>
-                        </a>
+                            <a class="nav__delivery-link" href="#" target="_blank">
+                                <svg class="nav__link-icon">
+                                    <use href="assets/images/svg/sprites.svg#instagram"></use>
+                                </svg>
+                            </a>
+        
+                            <a class="nav__delivery-link" href="#" target="_blank">
+                                <svg class="nav__link-icon">
+                                    <use href="assets/images/svg/sprites.svg#facebook"></use>
+                                </svg>
+                            </a>
+                        </div>
                     </nav>
                 </div><!-- /.footer__inner -->
             </div><!-- /.container -->

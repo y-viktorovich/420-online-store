@@ -7,6 +7,11 @@
     background-repeat: no-repeat;
     background-position: center bottom -15px;
 
+    @media (max-width: 565px) {
+        padding-bottom: 40.8rem;
+        background-size: 565px 400px;
+    }
+
     &__list-item {
         margin-bottom: 4.55rem;
         line-height: 1.5;
@@ -15,12 +20,31 @@
             list-style: decimal;
             padding-left: 3rem;
             padding-right: 20rem;
+
+            @media (max-width: 565px) {
+                padding-right: 10rem;
+                text-align: left;
+            }
+
+            @media (max-width: 320px) {
+                padding-right: 0;
+                text-align: left;
+            }
+        }
+
+        @media (max-width: 767px) {
+            text-align-last: left;
         }
     }
 
     &__list-text {
         font-size: 2.8rem;
         color: $black;
+
+        @media (max-width: 767px) {
+            font-size: 1.8rem;
+            text-align: left;
+        }
     }
 
     &__list-icon {
@@ -46,6 +70,12 @@
         &:hover {
             text-decoration: underline;
             color: rgba($black, 0.7);
+        }
+    }
+
+    &__list-item__inner {
+        @media (max-width: 767px) {
+            font-size: 1.8rem;
         }
     }
 }
