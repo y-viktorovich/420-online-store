@@ -265,11 +265,14 @@ const validateInputs = () => {
     }
 };
 
-form.addEventListener('submit', event => {
-    event.preventDefault();
 
-    validateInputs();
-});
+if (form) {
+    form.addEventListener('submit', event => {
+        event.preventDefault();
+    
+        validateInputs();
+    });
+}
 
 
 

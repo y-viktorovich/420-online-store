@@ -1,9 +1,1 @@
-.img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-.flex {
-  display: flex;
-}
+.img{display:block;max-width:100%;height:auto}.flex{display:-ms-flexbox;display:flex}

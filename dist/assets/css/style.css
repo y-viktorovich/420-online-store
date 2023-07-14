@@ -731,6 +731,7 @@ body.no-scroll .header, body.show-nav .header {
     position: relative;
     background-image: url("../images/intro/intro-bg.jpg");
     background-size: cover;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .intro__gradient {
@@ -1027,6 +1028,7 @@ body.no-scroll .header, body.show-nav .header {
 .recommendations__item {
     padding: 0 2.1rem 3.6rem;
     position: relative;
+    min-height: 400px;
     overflow: hidden;
 }
 
