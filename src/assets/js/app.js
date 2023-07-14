@@ -43,7 +43,10 @@ let deliverySection = document.querySelector('#delivery');
         deliveryBtn.addEventListener('click', (event) => {
             event.preventDefault();
             handleButtonClick();
-            console.log(deliverySection, deliveryBtn);
+
+            burgerBtn.classList.remove('active');
+            nav.classList.remove('show');
+            body.classList.remove('show-nav');
         });
     }
 
